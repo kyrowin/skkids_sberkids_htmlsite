@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дела</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Дела</h2>
+        
+        <!-- Кнопка для добавления нового дела -->
+        <button class="add-task-btn" id="add-task-btn">Добавить дело</button>
+
+        <!-- Список задач -->
+        <ul class="task-list" id="task-list">
+            <!-- Пример задачи -->
+            <li class="task-item">
+                <span class="task-text">Вынести мусор</span>
+                <button class="task-complete-btn">Выполнено</button>
+                <button class="task-delete-btn">Удалить</button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Модальное окно для добавления нового дела -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <h3>Новое дело</h3>
+            <label for="task-input">Описание дела:</label>
+            <input type="text" id="task-input" placeholder="Например, сходить в магазин">
+            <button class="modal-add-btn" id="modal-add-btn">Добавить</button>
+        </div>
+    </div>
+
+    <!-- Таскбар с выделенной вкладкой "Дела" -->
+    <div class="bottom-nav">
+        <a href="index.html" class="nav-item"><i class="fas fa-home"></i><span>Главная</span></a>
+        <a href="savings.html" class="nav-item"><i class="fas fa-piggy-bank"></i><span>Копилки</span></a>
+        <a href="tasks.html" class="nav-item active"><i class="fas fa-book"></i><span>Дела</span></a>
+        <a href="settings.html" class="nav-item"><i class="fas fa-cog"></i><span>Настройки</span></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

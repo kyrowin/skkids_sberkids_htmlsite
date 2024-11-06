@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sberkids</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="balance">СберКарта 0₽</div>
+            <div class="bonus">0 <img src="i.webp" alt="Bonus"></div>
+        </div>
+
+        <button class="button" onclick="location.href='transfer.html'">Перевести деньги</button>
+
+        <div class="card">
+            <div class="history-header" id="history-header">
+                История по карте
+                <span class="arrow" id="arrow">▼</span>
+            </div>
+            <div class="history" id="history">
+                <div> ᠌</div>
+                <div>КрасноеБелое 24.10 193.24₽</div>
+                <div> ᠌ </div>
+                <div>Пятерочка 24.10 403.32₽</div>
+                <div> ᠌ </div>
+                <div>ООО ОнлайнПокупки 23.10 200₽</div>
+                <div> ᠌ </div>
+                <div>Школьная Столовая 24.10 50₽</div>
+                <div> ᠌ </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>Лимиты</div>
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <a href="index.html" class="nav-item active"><i class="fas fa-home"></i><span>Главная</span></a>
+        <a href="savings.html" class="nav-item"><i class="fas fa-piggy-bank"></i><span>Копилки</span></a>
+        <a href="tasks.html" class="nav-item"><i class="fas fa-book"></i><span>Дела</span></a>
+        <a href="settings.html" class="nav-item"><i class="fas fa-cog"></i><span>Настройки</span></a>        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Копилки</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Копилки</h2>
+
+        <button class="add-savings-btn" id="add-savings-btn">Добавить копилку</button>
+        
+            <!-- Модальное окно для добавления новой копилки -->
+        <div class="modal" id="modal">
+          <div class="modal-content">
+               <span class="close" id="close-modal">&times;</span>
+               <h3>Новая копилка</h3>
+               <label for="goal-name">Цель:</label>
+               <input type="text" id="goal-name" placeholder="Например, отпуск">
+               <label for="goal-amount">Сумма:</label>
+               <input type="number" id="goal-amount" placeholder="Введите сумму">
+               <button class="modal-add-btn" id="modal-add-btn">Добавить</button>
+           </div>
+        </div>
+
+        <!-- Пример первой копилки -->
+        <div class="savings-goal">
+            <h3>Донат в игру</h3>
+            <p>Цель: 500 ₽</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;"></div>
+            </div>
+            <p>Собрано: 300 ₽</p>
+            <button class="savings-action add-funds">Пополнить</button>
+            <button class="savings-action withdraw-funds">Снять</button>
+        </div>
+
+        <!-- Пример второй копилки -->
+        <div class="savings-goal">
+            <h3>Очки VR</h3>
+            <p>Цель: 25000 ₽</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 45%;"></div>
+            </div>
+            <p>Собрано: 10000 ₽</p>
+            <button class="savings-action add-funds">Пополнить</button>
+            <button class="savings-action withdraw-funds">Снять</button>
+        </div>
+
+        <!-- Дополнительные копилки можно добавить аналогичным образом -->
+    </div>
+
+    <!-- Таскбар с выделением вкладки "Копилки" -->
+    <div class="bottom-nav">
+        <a href="index.html" class="nav-item"><i class="fas fa-home"></i><span>Главная</span></a>
+        <a href="savings.html" class="nav-item active"><i class="fas fa-piggy-bank"></i><span>Копилки</span></a>
+        <a href="tasks.html" class="nav-item"><i class="fas fa-book"></i><span>Дела</span></a>
+        <a href="settings.html" class="nav-item"><i class="fas fa-cog"></i><span>Настройки</span></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

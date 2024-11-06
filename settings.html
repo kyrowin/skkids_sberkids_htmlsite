@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Настройки</h2>
+        
+        <!-- Опции настроек в виде кнопок -->
+        <div class="settings-options">
+            <button class="settings-btn">
+                <i class="fas fa-lock"></i>
+                Сменить PIN-код
+            </button>
+            <button class="settings-btn">
+                <i class="fas fa-bell"></i>
+                Уведомления
+            </button>
+            <button class="settings-btn">
+                <i class="fas fa-user-circle"></i>
+                Персональные данные
+            </button>
+            <button class="settings-btn">
+                <i class="fas fa-language"></i>
+                Язык
+            </button>
+            <button class="settings-btn" id="support-btn">
+                <i class="fas fa-question-circle"></i>
+                Поддержка
+            </button>
+        </div>
+    </div>
+
+    <!-- Модальное окно поддержки -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <h3>Служба Поддержки</h3>
+            <p>Телефон: +7 (800) 123-45-67</p>
+            <p>Эл. почта: support@example.com</p>
+        </div>
+    </div>
+
+    <!-- Таскбар с выделенной вкладкой "Настройки" -->
+    <div class="bottom-nav">
+        <a href="index.html" class="nav-item"><i class="fas fa-home"></i><span>Главная</span></a>
+        <a href="savings.html" class="nav-item"><i class="fas fa-piggy-bank"></i><span>Копилки</span></a>
+        <a href="tasks.html" class="nav-item"><i class="fas fa-book"></i><span>Дела</span></a>
+        <a href="settings.html" class="nav-item active"><i class="fas fa-cog"></i><span>Настройки</span></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
