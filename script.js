@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Добавляем обработчики для новых задач
             taskItem.querySelector('.task-complete-btn').addEventListener('click', () => {
-                taskItem.querySelector('.task-text').classList.toggle('completed');
+                taskList.removeChild(taskItem);
             });
 
             taskItem.querySelector('.task-delete-btn').addEventListener('click', () => {
